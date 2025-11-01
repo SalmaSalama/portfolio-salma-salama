@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish  = "dist"
+
+# Pour SPA (si tu utilises un router). Avec ancres #... ce n'est pas obligé, mais ça ne gêne pas.
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
